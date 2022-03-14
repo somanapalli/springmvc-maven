@@ -18,6 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Transactional
 	public int save(Employee emp) {
 		
+		System.out.println("iam save method");
 		 return repository.create(emp);
 	}
 
