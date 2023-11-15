@@ -24,7 +24,8 @@ public class EmployeeController {
 	
 	
 	
-	@RequestMapping(value = "registerUser", method = RequestMethod.POST)
+	
+	@PostMaping("/registerUser");
 	public ModelAndView registerUser(@RequestParam("empid") int empid,@RequestParam("firstName") String firstName,@RequestParam("lastName") String lastName ) {
 		
 		Employee emp = new Employee();
